@@ -1,7 +1,147 @@
 /* Our CSS file. */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Photo-image-dark-wallpaper.png");
+}
 
 .container, .content {
 width: 100%;
 height: 100%;
 }
+
+main{
+    width: 90%;
+    max-width: 70rem;
+    min-height: 15rem;
+    padding: 2rem;
+    margin: 4rem auto;
+    background: rgba(154, 224, 245, 0.842);
+    border-radius: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form{
+    padding: 1rem;
+
+}
+
+.form, .form > *, .container > *{
+    border-radius: 1rem;
+}
+
+.info{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info > p{
+    margin-right: 10px;
+}
+
+.info p .label{
+    font-weight: bolder;
+}
+
+.info > span{
+    color: #000;
+}
+
+.textarea{
+    width: 100%;
+    min-height: 20rem;
+    padding: 1.5rem;
+    color: seagreen;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    border: 1px solid rgb(121, 224, 190);
+}
+
+.btn{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.8rem;
+    background: linear-gradient(118deg, rgb(67, 212, 238), rgb(44, 44, 226));
+    color: #fff;
+    overflow: hidden;
+    transition: 0.5s linear;
+    position: relative;
+}
+
+.btn:hover{
+    color: rgb(12, 11, 11);
+    background: rgba(4, 228, 15, 0.897);
+}
+
+
+.thread-box{
+    width: 100%;
+    min-height: 5rem;
+    display: grid;
+    grid: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+}
+
+.thread{
+    min-height: 5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.75rem;
+    background: #fafdfe;
+}
+
+.tools{
+    display: flex;
+    margin-bottom: 0.5rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.tools .index{
+    margin-right: auto;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    background: teal;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.close{
+    border: 1px solid #f6f6f6;
+    cursor: pointer;
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.7rem bold;
+    display: inline-block;
+}
+
+.close:hover{
+    background: red;
+}
+
+
+
+
+
+
+
+
